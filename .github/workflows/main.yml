@@ -25,11 +25,10 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         
         port: ${{ secrets.PORT }}
-        source: "tests/a.txt,tests/b.txt"
+        source: ./
         target: /home/ubuntu
       
     
